@@ -19,9 +19,9 @@ target_include_directories(fruits_Lib
     "$<INSTALL_INTERFACE:${include_dest}>"
 )
 
-install(TARGETS fruits EXPORT fruits DESTINATION "${main_lib_dest}")
-install(FILES "include/fruits/fruits.h" DESTINATION "${include_dest}")
-install(EXPORT fruits DESTINATION "${lib_dest}")
-
 add_library(fruits::fruits ALIAS fruits_Lib)
+
+install(TARGETS fruits::fruits EXPORT fruits::fruits DESTINATION "${main_lib_dest}")
+install(FILES "include/fruits/fruits.h" DESTINATION "${include_dest}")
+install(EXPORT fruits::fruits DESTINATION "${lib_dest}")
 
