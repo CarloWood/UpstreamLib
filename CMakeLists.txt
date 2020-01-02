@@ -6,7 +6,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_INCLUDE_CURRENT_DIR_IN_INTERFACE ON)
 
 set(Upstream_VERSION 3.4.1)
-set(include_dest "include/fruits-1.0")
+set(include_dest "include")
 
 include(GenerateExportHeader)
 
