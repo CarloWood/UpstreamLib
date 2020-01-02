@@ -13,7 +13,7 @@ To simply build and install the library, run
 and find the result as `build/libFruitsLib.a` and installed in `/tmp/UpstreamLib/lib/libFruitsLib.a`.
 
 After installation, another cmake project can use it by
-adding&dash; for example&dash; the following to its `CMakeLists.txt`:
+adding &ndash;for example&ndash; the following to its `CMakeLists.txt`:
 
     find_package(Fruits CONFIG)
 
