@@ -23,5 +23,5 @@ add_library(fruits::fruits ALIAS fruits_Lib)
 
 install(TARGETS fruits_Lib EXPORT fruits DESTINATION "${main_lib_dest}")
 install(FILES "include/fruits/fruits.h" DESTINATION "${include_dest}")
-install(EXPORT fruits::fruits DESTINATION "${lib_dest}")
+install(EXPORT fruits DESTINATION "${lib_dest}")
 
