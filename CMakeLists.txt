@@ -10,7 +10,7 @@ target_sources(fruits_Lib
 )
 
 target_include_directories(fruits_Lib
-  INTERFACE
+  PUBLIC
     "${CMAKE_CURRENT_SOURCE_DIR}/include"
 )
 
