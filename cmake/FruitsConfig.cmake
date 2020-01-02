@@ -1,1 +1,1 @@
-include("${CMAKE_CURRENT_LIST_DIR}/fruits.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/Fruits.cmake")
