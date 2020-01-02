@@ -11,7 +11,7 @@ target_sources(fruits_Lib
 
 target_include_directories(fruits_Lib
   INTERFACE
-    "${CMAKE_CURRENT_SOURCE_DIR}/.."
+    "${CMAKE_CURRENT_SOURCE_DIR}"
 )
 
 add_library(fruits::fruits ALIAS fruits_Lib)
