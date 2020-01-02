@@ -36,7 +36,7 @@ install(
   FILES
     include/fruits/fruits.h
   DESTINATION
-    include
+    include/fruits
   COMPONENT
     Devel
 )
