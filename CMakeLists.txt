@@ -9,10 +9,19 @@ target_sources(fruits_Lib
     "fruits.cpp"
 )
 
+set(include_dest "include/fruits-1.0")
+set(main_lib_dest "lib/fruits-1.0")
+set(lib_dest "${main_lib_dest}/${CMAKE_BUILD_TYPE}")
+
 target_include_directories(fruits_Lib
   PUBLIC
-    "${CMAKE_CURRENT_SOURCE_DIR}/include"
+    "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
+    "$<INSTALL_INTERFACE:${include_dest}>"
 )
+
+install(TARGETS fruits EXPORT fruits DESTINATION "${main_lib_dest}")
+install(FILES "include/fruits/fruits.h" DESTINATION "${include_dest}")
+install(EXPORT fruits DESTINATION "${lib_dest}")
 
 add_library(fruits::fruits ALIAS fruits_Lib)
 
